@@ -21,15 +21,52 @@
   flex: 5;
 }
 .topbar-right {
+  margin-top: 10px; /*stupid fix, maybe ask Azizbek later*/
   flex: 4;
   display: flex;
   align-self: center;
   justify-content: space-around;
   color: white;
 }
+
+.topbarLink {
+  margin-right: 10px;
+  /* margin: 10px 10px; */
+  /* margin: 10px 0 10px 10px; */
+  padding: 0;
+  /* margin-top: 10px !important; */
+  font-size: 16px;
+  cursor: pointer;
+}
+.topbar-icons {
+  display: flex;
+}
+.icon-item {
+  margin-right: 15px;
+  cursor: pointer;
+  position: relative;
+}
+.icon-badge {
+  width: 15px;
+  height: 15px;
+  background-color: red;
+  border-radius: 50%;
+  color: white;
+  position: absolute;
+  top: -5px;
+  right: -5px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 12px;
+}
 .topbarimg {
+  /* margin-bottom: 20px; */
   width: 32px;
   height: 32px;
+  border-radius: 50%;
+  object-fit: cover;
+  cursor: pointer;
 }
 .searchbox {
   width: 100%;
