@@ -11,8 +11,11 @@ export default function Topbar() {
         </div>
         <div className="topbar-center">
           <div className="searchbox">
-            <Icons.Search />
-            <input placeholder="Search for friends, videos, and posts" />
+            <Icons.Search className="searchIcon" />
+            <input
+              className="searchInput"
+              placeholder="Search for friends, videos, and posts"
+            />
           </div>
         </div>
         <div className="topbar-right">
@@ -34,6 +37,7 @@ export default function Topbar() {
               <span className="icon-badge">5</span>
             </div>
           </div>
+          <img src="/assets/person/1.jpeg" className="topbarimg" alt="" />
         </div>
       </div>
     </>
