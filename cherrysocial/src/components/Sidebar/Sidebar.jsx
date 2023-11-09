@@ -1,7 +1,6 @@
 import "./sidebar.css";
 import React from "react";
 import * as Icons from "@mui/icons-material";
-import { Icon } from "@mui/material";
 
 export default function Sidebar() {
   return (
