@@ -54,72 +54,72 @@ export default function Sidebar() {
                 src="/assets/person/4.jpeg"
                 alt=""
               />
-              <span className="sidebarFriendName">Dinora K</span>
+              <span className="sidebarFriendName">Maria Haim</span>
             </li>
             <li className="sidebarFriend">
               <img
                 className="sidebarFriendImg"
-                src="/assets/person/4.jpeg"
+                src="/assets/person/2.jpeg"
                 alt=""
               />
-              <span className="sidebarFriendName">Dinora K</span>
+              <span className="sidebarFriendName">Alilu Haim</span>
             </li>
             <li className="sidebarFriend">
               <img
                 className="sidebarFriendImg"
-                src="/assets/person/4.jpeg"
+                src="/assets/person/3.jpeg"
                 alt=""
               />
-              <span className="sidebarFriendName">Dinora K</span>
+              <span className="sidebarFriendName">Rashid Ilham</span>
             </li>
             <li className="sidebarFriend">
               <img
                 className="sidebarFriendImg"
-                src="/assets/person/4.jpeg"
+                src="/assets/person/5.jpeg"
                 alt=""
               />
-              <span className="sidebarFriendName">Dinora K</span>
+              <span className="sidebarFriendName">Munira Tagaeva</span>
             </li>
             <li className="sidebarFriend">
               <img
                 className="sidebarFriendImg"
-                src="/assets/person/4.jpeg"
+                src="/assets/person/6.jpeg"
                 alt=""
               />
-              <span className="sidebarFriendName">Dinora K</span>
+              <span className="sidebarFriendName">Kimberley Scott</span>
             </li>
             <li className="sidebarFriend">
               <img
                 className="sidebarFriendImg"
-                src="/assets/person/4.jpeg"
+                src="/assets/person/7.jpeg"
                 alt=""
               />
-              <span className="sidebarFriendName">Dinora K</span>
+              <span className="sidebarFriendName">George Foreman</span>
             </li>
             <li className="sidebarFriend">
               <img
                 className="sidebarFriendImg"
-                src="/assets/person/4.jpeg"
+                src="/assets/person/8.jpeg"
                 alt=""
               />
-              <span className="sidebarFriendName">Dinora K</span>
+              <span className="sidebarFriendName">Sophia Ayub</span>
             </li>
 
             <li className="sidebarFriend">
               <img
                 className="sidebarFriendImg"
-                src="/assets/person/4.jpeg"
+                src="/assets/person/9.jpeg"
                 alt=""
               />
-              <span className="sidebarFriendName">Dinora K</span>
+              <span className="sidebarFriendName">Harriet Liston</span>
             </li>
             <li className="sidebarFriend">
               <img
                 className="sidebarFriendImg"
-                src="/assets/person/4.jpeg"
+                src="/assets/person/10.jpeg"
                 alt=""
               />
-              <span className="sidebarFriendName">Dinora K</span>
+              <span className="sidebarFriendName">Penelopa Morgan</span>
             </li>
           </ul>
         </div>

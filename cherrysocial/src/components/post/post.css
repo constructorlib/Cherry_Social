@@ -14,3 +14,21 @@
   align-items: center;
   justify-content: space-between;
 }
+.postLeft {
+  display: flex;
+  align-items: center;
+}
+.postProfileImg {
+  width: 32px;
+  height: 32px;
+  border-radius: 50%;
+  object-fit: cover;
+}
+.postUserName {
+  font-size: 15px;
+  font-weight: bold;
+  margin: 0 10px;
+}
+.postDate {
+  font-size: 12px;
+}
