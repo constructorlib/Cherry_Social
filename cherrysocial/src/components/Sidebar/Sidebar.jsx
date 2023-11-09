@@ -57,6 +57,71 @@ export default function Sidebar() {
               />
               <span className="sidebarFriendName">Dinora K</span>
             </li>
+            <li className="sidebarFriend">
+              <img
+                className="sidebarFriendImg"
+                src="/assets/person/4.jpeg"
+                alt=""
+              />
+              <span className="sidebarFriendName">Dinora K</span>
+            </li>
+            <li className="sidebarFriend">
+              <img
+                className="sidebarFriendImg"
+                src="/assets/person/4.jpeg"
+                alt=""
+              />
+              <span className="sidebarFriendName">Dinora K</span>
+            </li>
+            <li className="sidebarFriend">
+              <img
+                className="sidebarFriendImg"
+                src="/assets/person/4.jpeg"
+                alt=""
+              />
+              <span className="sidebarFriendName">Dinora K</span>
+            </li>
+            <li className="sidebarFriend">
+              <img
+                className="sidebarFriendImg"
+                src="/assets/person/4.jpeg"
+                alt=""
+              />
+              <span className="sidebarFriendName">Dinora K</span>
+            </li>
+            <li className="sidebarFriend">
+              <img
+                className="sidebarFriendImg"
+                src="/assets/person/4.jpeg"
+                alt=""
+              />
+              <span className="sidebarFriendName">Dinora K</span>
+            </li>
+            <li className="sidebarFriend">
+              <img
+                className="sidebarFriendImg"
+                src="/assets/person/4.jpeg"
+                alt=""
+              />
+              <span className="sidebarFriendName">Dinora K</span>
+            </li>
+
+            <li className="sidebarFriend">
+              <img
+                className="sidebarFriendImg"
+                src="/assets/person/4.jpeg"
+                alt=""
+              />
+              <span className="sidebarFriendName">Dinora K</span>
+            </li>
+            <li className="sidebarFriend">
+              <img
+                className="sidebarFriendImg"
+                src="/assets/person/4.jpeg"
+                alt=""
+              />
+              <span className="sidebarFriendName">Dinora K</span>
+            </li>
           </ul>
         </div>
       </div>
