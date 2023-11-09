@@ -21,10 +21,10 @@
   flex: 5;
 }
 .topbar-right {
-  margin-top: 10px; /*stupid fix, maybe ask Azizbek later*/
+  /* margin-top: 10px; stupid fix, maybe ask Azizbek later */
   flex: 4;
   display: flex;
-  align-self: center;
+  align-items: center;
   justify-content: space-around;
   color: white;
 }
@@ -40,9 +40,12 @@
 }
 .topbar-icons {
   display: flex;
+  align-items: center;
+  gap: 15px;
+  margin-bottom: -2.5px;
 }
 .icon-item {
-  margin-right: 15px;
+  /* margin-right: 15px; */
   cursor: pointer;
   position: relative;
 }

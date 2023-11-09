@@ -1,7 +1,10 @@
+import "./sidebar.css";
+import React from "react";
+
 export default function Sidebar() {
   return (
     <>
-      <div></div>
+      <div className="sidebar">Sidebar</div>
     </>
   );
 }
