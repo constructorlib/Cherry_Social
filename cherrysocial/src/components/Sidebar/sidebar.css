@@ -4,5 +4,18 @@
 }
 .sidebarWrapper {
   padding: 20px;
-  background-color: yellowgreen;
+  /* background-color: yellowgreen; */
+}
+.sidebarList {
+  padding: 0;
+  margin: 0;
+  list-style: none;
+}
+.sidebarListItem {
+  display: flex;
+  align-items: center;
+  margin-bottom: 20px;
+}
+.sidebarIcon {
+  margin-right: 15px;
 }
