@@ -1,5 +1,6 @@
 import "./post.css";
 import * as Icons from "@mui/icons-material";
+import { Users } from "../../dummyData";
 
 export default function Post({ post }) {
   return (
@@ -7,8 +8,14 @@ export default function Post({ post }) {
       <div className="postWrapper">
         <div className="postTop">
           <div className="postTopLeft">
-            <img src="assets/person/1.jpeg" className="postProfileImg" alt="" />
-            <span className="postUserName">Dinora Khoshimova</span>
+            <img
+              src={Users.filter((u) => u.id === post?.userId)[0].profilePicture}
+              className="postProfileImg"
+              alt=""
+            />
+            <span className="postUserName">
+              {Users.filter((u) => u.id === post?.userId)[0].username}
+            </span>
             <span className="postDate"> {post.date}</span>
           </div>
           <div className="postTopRight">

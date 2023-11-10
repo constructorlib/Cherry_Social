@@ -2,7 +2,7 @@ export const Users = [
   {
     id: 1,
     profilePicture: "assets/person/1.jpeg",
-    username: "Safak Kocaoglu",
+    username: "Dinora Khoshimova",
   },
   {
     id: 2,
@@ -17,7 +17,7 @@ export const Users = [
   {
     id: 4,
     profilePicture: "assets/person/4.jpeg",
-    username: "Dora Hawks",
+    username: "Maria Haim",
   },
   {
     id: 5,
