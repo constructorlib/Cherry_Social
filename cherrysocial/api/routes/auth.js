@@ -1,14 +1,16 @@
 const router = require("express").Router();
 const User = require("../models/User");
 
-//REGISTER
-
-router.post("/register", (req, res) => {
-  const user = new User({
-    username: "Dinora",
-    email: "dinora@gmail.com",
+// REGISTER
+router.get("/register", async (req, res) => {
+  const newUser = await new User({
+    username: "john",
+    email: "asdsa@gmail.com",
     password: "123456",
   });
-  user.save();
+
+  await newUser.save(); // <-- Fix the typo here
+  res.send("ok");
 });
+
 module.exports = router;
