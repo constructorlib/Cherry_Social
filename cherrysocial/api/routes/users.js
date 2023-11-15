@@ -43,6 +43,13 @@ router.delete("/:id", async (req, res) => {
   }
 });
 //getsin user
+router.get("./:id", async (req, res) => {
+  try {
+    const user = User.findById(req.params.id);
+  } catch (err) {
+    res.status(500).json(err);
+  }
+});
 //follow user
 //follow not
 
