@@ -24,7 +24,10 @@ router.put("/:id", async (req, res) => {
     return res.status(403).json("You can update only your account!");
   }
 });
-
+/*
+JUST A REMINDER TO MYSELF THAT iD WAS CHANGED TO userId
+hence the problem 
+*/
 //delete user
 //getsin user
 //follow user
