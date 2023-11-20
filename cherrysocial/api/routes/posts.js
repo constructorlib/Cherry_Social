@@ -69,13 +69,13 @@ router.get("/:id", async (req, res) => {
   }
 });
 //call timeline post
-router.get("/timeline", async (req, res) => {
+router.get("/timeline/all", async (req, res) => {
   try {
     const currentUser = await User.findById(req.body.userId);
-    const userPosts = await Post.find({ userId: currenUser._id });
+    const userPosts = await Post.find({ userId: currentUser._id });
     const friendlyPosts = await Promise.all(
-      currentUser.followings.map((friendId) => {
-        Post.find({ userId: friendId });
+      currentUser.following.map((friendId) => {
+        return Post.find({ userId: friendId });
       })
     );
     res.json(userPosts.concat(...friendlyPosts));
@@ -83,5 +83,6 @@ router.get("/timeline", async (req, res) => {
     res.status(500).json(err);
   }
 });
+
 // works, do it tomorrow. Tired today
 module.exports = router;
