@@ -10,27 +10,18 @@ import {
   createBrowserRouter,
   RouterProvider,
   Route,
+  Routes,
   Router,
 } from "react-router-dom";
 
 export default function App() {
   return (
-    <Router>
-      <Switch>
-        <Route path="/">
-          <Home />
-        </Route>
-      </Switch>
-      <Switch>
-        <Route path="/profile/:username">
-          <Profile />
-        </Route>
-      </Switch>
-      <Switch>
-        <Route path="/login">
-          <Login />
-        </Route>
-      </Switch>
-    </Router>
+    <BrowserRouter>
+      <Routes>
+        <Route path="/" element={<Home />} />
+        <Route path="/login" element={<Login />} />
+        <Route path="/profile/:username" element={<Profile />} />
+      </Routes>
+    </BrowserRouter>
   );
 }
