@@ -3,10 +3,13 @@ import * as Icons from "@mui/icons-material";
 import { Users } from "../../dummyData";
 import React from "react";
 import { useState } from "react";
+
+const PF = import.meta.env.VITE_REACT_APP_PUBLIC_FOLDER;
+
 export default function Post({ post }) {
   const [like, setLike] = useState(post.like);
   const [isLiked, setIsLiked] = useState(false);
-  const PF = process.env.REACT_APP_PUBLIC_FOLDER;
+
   const likeHandler = () => {
     setLike(isLiked ? like - 1 : like + 1);
     setIsLiked(!isLiked);
@@ -18,7 +21,10 @@ export default function Post({ post }) {
         <div className="postTop">
           <div className="postTopLeft">
             <img
-              src={Users.filter((u) => u.id === post?.userId)[0].profilePicture}
+              src={
+                PF +
+                Users.filter((u) => u.id === post?.userId)[0].profilePicture
+              }
               className="postProfileImg"
               alt=""
             />
