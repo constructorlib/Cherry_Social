@@ -69,5 +69,15 @@ router.get("/:id", async (req, res) => {
   }
 });
 //call timeline post
+router.get("/timeline", async (req, res) => {
+  let postArray = [];
+  try {
+    const currentUser = await User.findById(req.body.userId);
+    const userPosts = await Post.find({ userId: currenUser._id });
+    const friendlyPosts = await Promise.all();
+  } catch (err) {
+    res.status(500).json(err);
+  }
+});
 // works, do it tomorrow. Tired today
 module.exports = router;
