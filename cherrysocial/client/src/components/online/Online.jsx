@@ -12,7 +12,7 @@ export default function Online({ user }) {
         />
         <span className="rightbarOnline"></span>
       </div>
-      <span className="rightbarUsername">{user.username}</span>
+      <span className="rightbarUsername">{PF + user.userName}</span>
     </li>
   );
 }

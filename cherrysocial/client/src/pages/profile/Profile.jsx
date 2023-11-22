@@ -3,6 +3,7 @@ import Topbar from "../../components/Topbar/Topbar";
 import Sidebar from "../../components/Sidebar/Sidebar";
 import Feed from "../../components/Feed/Feed";
 import Rightbar from "../../components/Rightbar/Rightbar";
+const PF = import.meta.env.VITE_REACT_APP_PUBLIC_FOLDER;
 
 export default function Profile() {
   return (
@@ -15,12 +16,12 @@ export default function Profile() {
             <div className="profileCover">
               <img
                 className="profileCoverImg"
-                src="assets/post/3.jpeg"
+                src={`${PF}post/3.jpeg`}
                 alt=""
               />
               <img
                 className="profileUserImg"
-                src="assets/person/1.jpeg"
+                src={`${PF}person/1.jpeg`}
                 alt=""
               />
             </div>
