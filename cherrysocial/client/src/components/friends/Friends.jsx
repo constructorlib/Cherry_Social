@@ -1,7 +1,7 @@
 import "./friends.css";
 
 export default function Friends({ user }) {
-  const PF = import.meta.env.REACT_APP_PUBLIC_FOLDER;
+  const PF = import.meta.env.VITE_REACT_APP_PUBLIC_FOLDER;
 
   return (
     <li className="sidebarFriend">

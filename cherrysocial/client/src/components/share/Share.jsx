@@ -1,6 +1,8 @@
 import "./share.css";
 import * as Icons from "@mui/icons-material";
 export default function Share() {
+  const PF = import.meta.env.VITE_REACT_APP_PUBLIC_FOLDER;
+
   return (
     <div className="share">
       <div className="shareWrapper">

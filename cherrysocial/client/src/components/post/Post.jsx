@@ -4,17 +4,14 @@ import { Users } from "../../dummyData";
 import React from "react";
 import { useState } from "react";
 
-const PF = import.meta.env.VITE_REACT_APP_PUBLIC_FOLDER;
-
 export default function Post({ post }) {
+  const PF = import.meta.env.VITE_REACT_APP_PUBLIC_FOLDER;
   const [like, setLike] = useState(post.like);
   const [isLiked, setIsLiked] = useState(false);
-
   const likeHandler = () => {
     setLike(isLiked ? like - 1 : like + 1);
     setIsLiked(!isLiked);
   };
-
   return (
     <div className="post">
       <div className="postWrapper">

@@ -4,6 +4,7 @@ import { Users } from "../../dummyData";
 import Online from "../online/Online";
 import { Key } from "@mui/icons-material";
 export default function Rightbar() {
+  const PF = import.meta.env.VITE_REACT_APP_PUBLIC_FOLDER;
   return (
     <>
       <div className="rightbar">
@@ -17,9 +18,7 @@ export default function Rightbar() {
           <img src="assets/ad.jpg" alt="" className="rightbarAd" />
           <h4 className="rightbarTitle">Online Friends</h4>
           <ul className="rightbarFriendList">
-            {Users.map((u) => (
-              <Online key={u.id} user={u} />
-            ))}
+            {PF + Users.map((u) => <Online key={u.id} user={u} />)}
           </ul>
         </div>
       </div>
