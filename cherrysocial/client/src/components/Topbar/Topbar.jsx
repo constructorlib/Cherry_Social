@@ -1,13 +1,15 @@
 import "./topbar.css";
 import React from "react";
 import * as Icons from "@mui/icons-material";
-
+import { Link } from "react-router-dom";
 export default function Topbar() {
   return (
     <>
       <div className="topbar-all">
         <div className="topbar-left">
-          <span className="logo">Cherry Social</span>
+          <Link to="/" style={{ textDecoration: "none" }}>
+            <span className="logo">Cherry Social</span>
+          </Link>
         </div>
         <div className="topbar-center">
           <div className="searchbox">
