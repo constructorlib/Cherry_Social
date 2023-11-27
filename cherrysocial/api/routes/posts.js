@@ -78,7 +78,7 @@ router.get("/timeline/:userId", async (req, res) => {
         return Post.find({ userId: friendId });
       })
     );
-    res.json(userPosts.concat(...friendlyPosts));
+    res.status(200).json(userPosts.concat(...friendlyPosts));
   } catch (err) {
     res.status(500).json(err);
   }
