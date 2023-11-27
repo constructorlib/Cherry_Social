@@ -6,9 +6,13 @@ import "./feed.css";
 import axios from "axios";
 export default function Feed() {
   const [posts, setPosts] = useState([]);
+
   useEffect(() => {
-    const res = axios.get("posts/timeline/6551d3f81720514eff91624a");
-    console.log(res);
+    const fetchPosts = async () => {
+      const res = await axios.get("posts/timeline/6551d3f81720514eff91624a");
+      console.log(res);
+    };
+    fetchPosts();
   }, []);
   return (
     <div className="feed">
