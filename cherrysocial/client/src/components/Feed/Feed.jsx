@@ -8,8 +8,12 @@ export default function Feed() {
   const [posts, setPosts] = useState([]);
 
   useEffect(() => {
+    const proxy = import.meta.env.VITE_PROXY;
     const fetchPosts = async () => {
-      const res = await axios.get("posts/timeline/6551d3f81720514eff91624a");
+      const res = await axios.get(
+        `${proxy}/posts/timeline/6551d3f81720514eff91624a`
+      );
+      console.log("FOOOOOOOOOOOOO");
       console.log(res);
     };
     fetchPosts();
