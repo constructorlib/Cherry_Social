@@ -7,15 +7,16 @@ import axios from "axios";
 export default function Feed({ username }) {
   const [posts, setPosts] = useState([]);
   useEffect(() => {
-    console.log("feed rendered");
+    const res = axios.get("posts/timeline/655558961b0b22cab8ec4bb5");
+    console.log();
   }, []);
   return (
     <div className="feed">
       <div className="feedWrapper">
-        {(!username || username === user.username) && <Share />}
-        {posts.map((p) => (
+        <Share />
+        {/* {posts.map((p) => (
           <Post key={p._id} post={p} />
-        ))}
+        ))} */}
       </div>
     </div>
   );
